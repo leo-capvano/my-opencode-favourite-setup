@@ -15,18 +15,27 @@ Each plugin installs from its subdirectory:
 {
   "$schema": "https://opencode.ai/config.json",
   "plugins": [
-    "github:leo-capvano/my-opencode-favourite-setup#v0.1.0::path:packages/context-inspector",
+    "github:leo-capvano/my-opencode-favourite-setup#v0.1.1::path:packages/context-inspector",
     {
-      "package": "github:leo-capvano/my-opencode-favourite-setup#v0.1.0::path:packages/model-fallback",
+      "package": "github:leo-capvano/my-opencode-favourite-setup#v0.1.1::path:packages/model-fallback",
       "options": { "fallbacks": { "provider/model": ["other-provider/model"] } }
     }
   ]
 }
 ```
 
-Versions are git tags (see [Releases](https://github.com/leo-capvano/my-opencode-favourite-setup/tags)). To upgrade, change `v0.1.0` to the newer tag. `#main` also works and follows the latest commit. See each plugin's README for options and limitations.
+Versions are git tags (see [Releases](https://github.com/leo-capvano/my-opencode-favourite-setup/tags)). To upgrade, change `v0.1.1` to the newer tag. `#main` also works and follows the latest commit. See each plugin's README for options and limitations.
 
 Tested with OpenCode 2.2.7.
+
+## Development
+
+TUI parts are written in `.tsx` and shipped precompiled. OpenTUI compiles Solid JSX at runtime only for files outside `node_modules`, and installed plugins live inside it. After editing `packages/context-inspector/tui.tsx`, rebuild and commit the generated `tui.js`:
+
+```sh
+npm install
+npm run build
+```
 
 ## License
 

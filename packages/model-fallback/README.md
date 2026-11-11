@@ -13,7 +13,7 @@ Add the plugin to `plugins` in your `opencode.json(c)` together with its options
   "$schema": "https://opencode.ai/config.json",
   "plugins": [
     {
-      "package": "github:leo-capvano/my-opencode-favourite-setup#v0.1.0::path:packages/model-fallback",
+      "package": "github:leo-capvano/my-opencode-favourite-setup#v0.1.1::path:packages/model-fallback",
       "options": {
         "fallbacks": {
           "proxy-provider/claude-haiku": ["direct-provider/claude-haiku"],

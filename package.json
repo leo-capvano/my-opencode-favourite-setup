@@ -1,0 +1,13 @@
+{
+  "name": "my-opencode-favourite-setup",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-typescript": "^7.27.1",
+    "babel-preset-solid": "~1.9.16"
+  }
+}
