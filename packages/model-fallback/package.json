@@ -1,0 +1,22 @@
+{
+  "name": "opencode-model-fallback",
+  "version": "0.1.0",
+  "description": "Per-model fallback chains for OpenCode: switch to the next model when a provider fails, including during compaction.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./server.js"
+  },
+  "files": [
+    "server.js",
+    "README.md"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "fallback"
+  ],
+  "engines": {
+    "opencode": ">=2.2.0"
+  }
+}

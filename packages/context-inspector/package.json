@@ -1,0 +1,31 @@
+{
+  "name": "opencode-context-inspector",
+  "version": "0.1.0",
+  "description": "A /context panel for the OpenCode TUI that shows what the latest model request was made of.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./server.js",
+    "./tui": "./tui.tsx",
+    "./rpc": "./rpc.js"
+  },
+  "files": [
+    "server.js",
+    "tui.tsx",
+    "rpc.js",
+    "README.md"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "context",
+    "tui"
+  ],
+  "engines": {
+    "opencode": ">=2.2.0"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": ">=2.2.0",
+    "solid-js": "*"
+  }
+}
