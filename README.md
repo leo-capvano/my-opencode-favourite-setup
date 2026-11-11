@@ -15,16 +15,16 @@ Each plugin installs from its subdirectory:
 {
   "$schema": "https://opencode.ai/config.json",
   "plugins": [
-    "github:leo-capvano/my-opencode-favourite-setup#main::path:packages/context-inspector",
+    "github:leo-capvano/my-opencode-favourite-setup#v0.1.0::path:packages/context-inspector",
     {
-      "package": "github:leo-capvano/my-opencode-favourite-setup#main::path:packages/model-fallback",
+      "package": "github:leo-capvano/my-opencode-favourite-setup#v0.1.0::path:packages/model-fallback",
       "options": { "fallbacks": { "provider/model": ["other-provider/model"] } }
     }
   ]
 }
 ```
 
-Pin a tag or a commit hash instead of `main` for reproducible installs. See each plugin's README for options and limitations.
+Versions are git tags (see [Releases](https://github.com/leo-capvano/my-opencode-favourite-setup/tags)). To upgrade, change `v0.1.0` to the newer tag. `#main` also works and follows the latest commit. See each plugin's README for options and limitations.
 
 Tested with OpenCode 2.2.7.
 

@@ -7,7 +7,7 @@ A `/context` panel for the [OpenCode](https://opencode.ai) V2 terminal UI. It sh
 ```jsonc
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugins": ["github:leo-capvano/my-opencode-favourite-setup#main::path:packages/context-inspector"]
+  "plugins": ["github:leo-capvano/my-opencode-favourite-setup#v0.1.0::path:packages/context-inspector"]
 }
 ```
 
